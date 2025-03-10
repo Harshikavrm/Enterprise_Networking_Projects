@@ -1,0 +1,51 @@
+Project2: Small Office Home Office/SOHO Network Design & Implementation Project
+
+
+Base network: 192.168.1.0
+No. of subnets= 3
+No of subnets = 2^n n = number of borrowed bits
+
+2^n=3==>2^0 = 1(less than 3)
+	2^1 = 2(less than 3)
+	2^2 = 4(more than 3)
+
+Hence, n=2
+
+Class C = 255.255.255.0 ==> 11111111.11111111.11111111.00000000
+
+After borrowing 2 bits
+
+New binary = 11111111.11111111.11111111.11000000
+
+New subnet Mask = 255.255.255.192
+
+Subnet mask size = 192 Hence, Block size = 64
+
+1st Subnet
+
+Network ID: 192.168.1.0
+
+Broadcast ID: 192.168.1.63
+
+Host range: 192.168.1.1-192.168.1.62
+
+
+2nd Subnet
+
+
+Network ID: 192.168.1.64
+
+Broadcast ID: 192.168.1.127
+
+Host range: 192.168.1.65-192.168.1.126
+
+
+3rd Subnet
+
+Network ID: 192.168.1.128
+
+
+Broadcast ID: 192.168.1.191
+
+
+Host range: 192.168.1.129-192.168.1.190
